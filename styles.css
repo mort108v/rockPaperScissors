@@ -160,4 +160,5 @@ button.scissors {
 button:hover,
 #start:hover {
     opacity: 0.6;
+    cursor: pointer;
 }

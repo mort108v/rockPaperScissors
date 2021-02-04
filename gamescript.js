@@ -13,6 +13,7 @@ const draw = document.querySelector("#draw");
 const bothPlayers = document.querySelector(".player");
 const player1 = document.querySelector("#player1");
 const player2 = document.querySelector("#player2");
+const choice = document.querySelector(".active");
 
 init();
 
@@ -50,8 +51,6 @@ function filterBTNs() {
 function userChoice() {
     console.log("Choice made");
 
-    // IF/ELSE 3 choices
-
     // Show START button
     startButton.style.display = "block";
     // Listen for click start --> goTo StartGame
@@ -62,32 +61,28 @@ function startGame() {
     console.log("Game startet");
 
     // Exe Animate
-    bothPlayers.classList.add("shake");
+    player1.classList.add("shake");
+    player2.classList.add("shake");
     // Exe Comp Choice
-    compChoice();
+    bothChoices();
 }
 
-function compChoice() {
+function bothChoices() {
     console.log("Computer Choice");
 
-    // random number generator
+    // Generate random computer choice
+    var randomHand = Math.ceil(Math.random() * 3);
+    console.log(randomHand);
+
+    // User Choice
+
+
+    // rock = 1;
+    // paper = 2;
+    // scissors = 3;
+    // const 1 < 2 = true;
     // Output result 
     // goTo --> ShowBothResults
-}
-
-function animateHands() {
-    console.log("Animate hands");
-
-    // Move hands up n´down 3 times
-    // END
-}
-
-function showBothResults() {
-    console.log("Both results");
-
-    // show Comp hand result
-    // show user hand result
-    // goTO --> determineWinner
 }
 
 function determineWinner() {
