@@ -39,6 +39,8 @@ function filterBTNs() {
         btn.classList.remove("active");
     });
     this.classList.add("active");
+
+    // https://www.javascripttutorial.net/javascript-dom/javascript-siblings/
     this.nextElementSibling.classList.remove("hidden");
 
     userChoice();
@@ -60,8 +62,9 @@ function startGame() {
     console.log("Game startet");
 
     // Exe Animate
-    bothPlayers.classList.add(".player.shake");
+    bothPlayers.classList.add("shake");
     // Exe Comp Choice
+    compChoice();
 }
 
 function compChoice() {

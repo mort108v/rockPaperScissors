@@ -131,14 +131,17 @@ h1 {
 }
 
 button.rock {
+    transform: rotate(-90deg);
     background-image: url(button_rock.png);
 }
 
 button.paper {
+    transform: rotate(-90deg);
     background-image: url(button_paper.png);
 }
 
 button.scissors {
+    transform: rotate(-90deg);
     background-image: url(button_scissors.png);
 }
 
@@ -152,4 +155,9 @@ button.scissors {
 
 #buttons h3 {
     text-align: center;
+}
+
+button:hover,
+#start:hover {
+    opacity: 0.6;
 }
