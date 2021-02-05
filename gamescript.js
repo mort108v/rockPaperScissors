@@ -75,7 +75,7 @@ function bothChoices() {
     console.log(randomHand);
 
     // User Choice
-
+    // https://www.w3schools.com/JS/js_booleans.asp
 
     // rock = 1;
     // paper = 2;
